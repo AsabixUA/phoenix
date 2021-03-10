@@ -1,0 +1,502 @@
+extends _layout
+
+block vars
+  - var pageTitle = "Service page";
+  - var pageClass = "pageservice";
+
+block content
+  //.webp-img(data-webp="./img/Rectangle5.webp" data-img="./img/Rectangle5.jpg")
+
+    <picture>
+      <source srcset="./img/awesomeWebPImage.webp" type="image/webp">
+      <source srcset="./img/creakyOldJPEG.jpg" type="image/jpeg">
+      <img src="./img/creakyOldJPEG.jpg" alt="Alt Text!">
+    </picture>
+
+  div.main-wrap
+    .service-top
+      .top-block.top-block-service-page
+        .top-block__bg-img-wrap
+          picture
+            source(srcset="./img/service-top-bg.webp" type="image/webp")
+            source(srcset="./img/service-top-bg.png" type="image/png")
+            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="img").top-block__bg-img
+          picture
+            source(srcset="./img/serv-bg-mob.webp" type="image/webp")
+            source(srcset="./img/serv-bg-mob.jpg" type="image/png")
+            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="img").top-block__bg-img.mob
+        .top-block__inner.site-container
+          .top-block-service__content
+            .top-block-service__txt
+              .top-block__office г. Самара, ул. Физкультурная 90-А, офис 314
+              .top-block__call
+                .top-block__call
+                  .top-block__call-left
+                    a(href="tel:+79170362600") +7 (917) 036 26 00
+                    a(href="#" data-modal-class="callback") Бесплатная консультация (24/7)
+              h1.top-block__title.site-title <strong>Вывод из запоя в Самаре</strong>
+              .top-block__caption круглосуточно, быстро и анонимно
+            .top-block-service__form
+              form.site-form
+                .site-form__title Быстро избавим от запоя
+                .site-form__caption Врач приедет в течении часа
+                .site-form__row
+                  .site-form__input
+                    input(type="text" placeholder="Ваше имя")
+                .site-form__row
+                  .site-form__input
+                    input(type="tel" inputmode="numeric" placeholder="+7(___)___-__-__" data-valid="phone")
+                .site-form__btn
+                  a(href="javascript:void(0);").site-btn.submit-btn.site-form__btn-i
+                    span Заказать звонок
+              .site-form-submit
+                .site-form-submit__img
+                  img(src="./img/ico/sun.svg" alt="img").site-form-submit__img-i
+                .site-form-submit__title Быстро избавим от запоя
+                .site-form-submit__caption Врач приедет в течении часа
+
+          .type-items.type-items--service
+            .type-items__inner
+              .type-items__item
+                .type-items__img
+                  include ../img/ico/services-ico01.svg
+                .type-items__txt Выезд <br> врача-нарколога <br> к пациенту на дом
+              .type-items__item
+                .type-items__img
+                  include ../img/ico/services-ico02.svg
+                .type-items__txt Консультация <br> и обследование <br> специалиста
+              .type-items__item
+                .type-items__img
+                  include ../img/ico/services-ico03.svg
+                .type-items__txt Подбор <br> индивидуального <br> плана лечения
+              .type-items__item
+                .type-items__img
+                  include ../img/ico/services-ico04.svg
+                .type-items__txt Проведение <br> процедуры по <br> детоксикации
+              .type-items__item
+                .type-items__img
+                  include ../img/ico/services-ico05.svg
+                .type-items__txt Проведение <br> восстановительной <br> терапии
+              .type-items__item
+                .type-items__img
+                  include ../img/ico/services-ico06.svg
+                .type-items__txt Назначение <br> лечения на первые <br> 3 дня
+              .type-items__item
+                .type-items__img
+                  include ../img/ico/services-ico07.svg
+                .type-items__txt Поддержка <br> до полной <br> нормализации
+
+      .breadcrumbs
+        .site-container.breadcrumbs__inner
+          .breadcrumbs__list
+            a(href="#").breadcrumbs__link Главная
+            a(href="javascript:void(0);").breadcrumbs__link Вывод из запоя на дому
+
+
+
+    .about
+      .about__inner.site-container
+        h2.site-h2 экспресс вывод из запоя
+        .site-tabs
+          a(href="javascript:void(0);" data-tab-id="tab-id-1").site-tabs__item.active Стандарт
+          a(href="javascript:void(0);" data-tab-id="tab-id-2").site-tabs__item Комфорт
+          a(href="javascript:void(0);" data-tab-id="tab-id-3").site-tabs__item VIP
+        .about__txt.site-text-block.tabs-block-i.active#tab-id-1
+          .site-text-block__txt
+            .site-text-block__left-img
+              picture.desctop
+                source(srcset="./img/express-img01.webp" type="image/webp")
+                source(srcset="./img/express-img01.png" type="image/png")
+                img(src="" alt="img")
+              picture.mobile-content
+                source(srcset="./img/serv-ex.webp" type="image/webp")
+                source(srcset="./img/serv-ex.png" type="image/png")
+                img(src="" alt="img")
+            p
+              | Запой является тяжелым состоянием человека, которое характеризуется сильной интоксикацией от злоупотребления алкоголя за период длительного и беспрерывного времени. Если игнорировать&nbsp;
+              a(href="#") купирование абстинентного синдрома
+              | &nbsp;, возможно появление тяжелых последствий. Среди них можно отметить нарушение или прекращение функционирования одного из внутренних органов, разрушения головного мозга человека, развитие острых заболеваний сердца и преждевременный летальный исход.
+            p
+              | <strong>Наркологический центр «Феникс» предлагает организовать анонимный вывод из запоя на дому в Самаре, или же осуществление таких же процедур в условиях стационара клиники.</strong> <br>
+              | Наши специалисты знают, как добиться положительного результата в срочном купировании запойного состояния. Начните&nbsp;
+              a(href="#") лечение алкогольной зависимости
+              | &nbsp; прямо сейчас, спасите здоровье свое и ваших родных.
+        .about__txt.site-text-block.tabs-block-i#tab-id-2
+          .site-text-block__txt
+            .site-text-block__left-img
+              picture.desctop
+                source(srcset="./img/express-img02.webp" type="image/webp")
+                source(srcset="./img/express-img02.png" type="image/png")
+                img(src="" alt="img")
+              picture.mobile-content
+                source(srcset="./img/express-mob1.webp" type="image/webp")
+                source(srcset="./img/express-mob1.png" type="image/png")
+                img(src="" alt="img")
+            p
+              | <strong>Наркологический центр «Феникс» предлагает организовать анонимный вывод из запоя на дому в Самаре, или же осуществление таких же процедур в условиях стационара клиники.</strong> <br>
+              | Наши специалисты знают, как добиться положительного результата в срочном купировании запойного состояния. Начните&nbsp;
+              a(href="#") лечение алкогольной зависимости
+              | &nbsp; прямо сейчас, спасите здоровье свое и ваших родных.
+
+            p
+              | Запой является тяжелым состоянием человека, которое характеризуется сильной интоксикацией от злоупотребления алкоголя за период длительного и беспрерывного времени. Если игнорировать&nbsp;
+              a(href="#") купирование абстинентного синдрома
+              | &nbsp;, возможно появление тяжелых последствий. Среди них можно отметить нарушение или прекращение функционирования одного из внутренних органов, разрушения головного мозга человека, развитие острых заболеваний сердца и преждевременный летальный исход.
+        .about__txt.site-text-block.tabs-block-i#tab-id-3
+          .site-text-block__txt
+            .site-text-block__left-img
+              picture.desctop
+                source(srcset="./img/express-img03.webp" type="image/webp")
+                source(srcset="./img/express-img03.png" type="image/png")
+                img(src="" alt="img")
+              picture.mobile-content
+                source(srcset="./img/express-mob2.webp" type="image/webp")
+                source(srcset="./img/express-mob2.png" type="image/png")
+                img(src="" alt="img")
+            p
+              | Запой является тяжелым состоянием человека, которое характеризуется сильной интоксикацией от злоупотребления алкоголя за период длительного и беспрерывного времени. Если игнорировать&nbsp;
+              a(href="#") купирование абстинентного синдрома
+              | &nbsp;, возможно появление тяжелых последствий. Среди них можно отметить нарушение или прекращение функционирования одного из внутренних органов, разрушения головного мозга человека, развитие острых заболеваний сердца и преждевременный летальный исход.
+            p
+              | <strong>Наркологический центр «Феникс» предлагает организовать анонимный вывод из запоя на дому в Самаре, или же осуществление таких же процедур в условиях стационара клиники.</strong> <br>
+              | Наши специалисты знают, как добиться положительного результата в срочном купировании запойного состояния. Начните&nbsp;
+              a(href="#") лечение алкогольной зависимости
+              | &nbsp; прямо сейчас, спасите здоровье свое и ваших родных.
+
+    .course
+      .site-container.course__inner
+        h2.course__title.site-h2 Стоимость выведения из запоя в Самаре:
+
+        .course__slider.swiper-container#course-slider
+          .course__list.swiper-wrapper
+            .course__item.swiper-slide
+              .course__content(style="background-color: #DCA821;")
+                .course__name СТАНДАРТ <br> КУРС
+                a(href="#").course__link Вывод из запоя на дому
+                .course__txt
+                  .course__sublist
+                    ul
+                      li — Выезд врача нарколога
+                      li — Осмотр и консультация
+                      li — Детокс (1-2 капельницы)
+                      li — Противорвотные препараты
+                      li — Обезболивающие
+                      li — Успокоительные препараты
+                      li — Терапия на 3 дня (лекарственные препараты)
+                  .course__sublist-min
+                    ul
+                      li - Препараты для снятия тяги
+                      li - Кардиопротекторы
+                      li - Гепатопротекторы
+                      li - Витамины
+                      li - Снятие и описание ЭКГ
+                a(href="#").course__price
+                  | от &nbsp;
+                  span 3 000
+                  | &nbsp; руб.
+            .course__item.swiper-slide
+              .course__content(style="background-color: #DC4E21;")
+                .course__name ПРЕМИУМ <br> КУРС
+                a(href="#").course__link Вывод из запоя на дому
+                .course__txt
+                  .course__sublist
+                    ul
+                      li — Выезд врача нарколога
+                      li — Осмотр и консультация
+                      li — Детокс (2-3 капельницы)
+                      li — Противорвотные препараты
+                      li — Обезболивающие
+                      li — Успокоительные препараты
+                      li — Терапия на 3 дня (лекарственные препараты)
+                      li — Препараты для снятия тяги
+                      li — Кардиопротекторы
+                  .course__sublist-min
+                    ul
+                      li - Гепатопротекторы
+                      li - Витамины
+                      li - Снятие и описание ЭКГ
+                a(href="#").course__price
+                  | от &nbsp;
+                  span 5 000
+                  | &nbsp; руб.
+            .course__item.swiper-slide
+              .course__content(style="background-color: #2199DC;")
+                .course__name VIP <br> КУРС
+                a(href="#").course__link Стационар на дому
+                .course__txt
+                  .course__sublist
+                    ul
+                      li — Выезд врача нарколога
+                      li — Осмотр и консультация
+                      li — Детокс (3-4 капельницы)
+                      li — Противорвотные препараты
+                      li — Обезболивающие
+                      li — Успокоительные препараты
+                      li — Терапия на 4-5 дня (лекарственные препараты)
+                      li — Препараты для снятия тяги
+                      li — Кардиопротекторы
+                      li — Гепатопротекторы
+                      li — Витамины
+                      li — Снятие и описание ЭКГ
+                a(href="#").course__price
+                  | от &nbsp;
+                  span 8 000
+                  | &nbsp; руб.
+
+    .advantage
+      .advantage__inner.site-container
+        h2.advantage__title.site-h2 ПРЕИМУЩЕСТВА КЛИНИКИ:
+        .advantage__content
+          .advantage__img
+            picture
+              source(srcset="./img/advantages-img01.webp" type="image/webp")
+              source(srcset="./img/advantages-img01.png" type="image/png")
+              img(src="" alt="img")
+          .advantage__txt
+            .advantage__check.check-items
+              .check-item Консультация по телефону о программах лечения
+              .check-item Срочный выезд врача нарколога на дом
+              .check-item Прием в стационаре клиники и госпитализация
+              .check-item Уникальные методы лечения зависимых
+              .check-item Детоксикация зависимых от наркотиков и алкоголя
+              .check-item Дипломированные врачи и специалисты
+              .check-item Программа реабилитации зависимых «12 шагов»
+              .check-item Гарантия полной анонимности на наши услуги
+              .check-item Большой процент выздоравливающих
+
+
+    .call-spec
+      .call-spec__inner.site-container
+        .call-spec__content
+          .call-spec__top-txt
+            span.call-spec__top-txt-title Мотивация зависимых <br>
+            span.call-spec__top-txt-desc
+              | Не знаете как уговорить близкого начать лечение? Мы поможем!
+              | <br>
+              | Специалисты центра по мотивации гарантированно убедят зависимого начать лечение.
+          .call-spec__top-phone
+            a(href="tel:+79170362600").call-spec__top-phone-i +7 (917) 036 26 00
+            a(href="#").site-btn.site-btn--br.call-spec__top-phone-btn
+              span Вызвать нарколога
+          .call-spec__bottom-txt Позвоните по телефону горячей линии и получите бесплатную консультацию нарколога. Мы работаем круглосуточно 24/7
+
+
+    .about
+      .about__inner.site-container
+        h2.about__title.site-h2 Вывод из запоя на дому
+        .about__txt.site-text-block
+          .site-text-block__txt
+            .site-text-block__left-img
+              picture.desctop
+                source(srcset="./img/express-img02.webp" type="image/webp")
+                source(srcset="./img/express-img02.png" type="image/png")
+                img(src="" alt="img")
+              picture.mobile-content
+                source(srcset="./img/express-mob1.webp" type="image/webp")
+                source(srcset="./img/express-mob1.png" type="image/png")
+                img(src="" alt="img")
+
+            p
+              | Осуществив звонок в нашу клинику «Феникс» в Самаре и области и заказав приезд врача на дом для вывода из запоя, необходимо договорится о точном времени приезда нашего специалиста. Самое благоприятное время для проведения процедуры по устранению запойного состояния – утро. В это время суток больной испытывает сильную абстиненцию и готов принять любую медицинскую помощь, поэтому легко идет на контакт с нашими сотрудниками.
+
+            p
+              | Первоначально, нарколог проведет диагностирование состояния человека, его самочувствие и настрой на дальнейшее лечение. Главное при первом осмотре для специалиста – выявить возможные противопоказания, в случае имеющихся таковых, вывести из запоя на дому будет невозможно.
+
+            p
+              | Далее, больному вводиться специальный раствор внутривенно, который поможет очистить организм от ядовитых токсинов этила. Такой процесс называется детоксикацией. После установленной капельницы на дому от запоя, пациент приходит в адекватное состояние и не испытывает болевых ощущений от похмелья. Пьющему назначается курс успокоительных препаратов, которые приведут в норму психическое состояние больного. На вывод из запоя в домашних условиях уходит порядком сутки, после чего он оставляет свой контактный номер телефона и уезжает.
+
+            .site-text-block__right-img
+              picture.desctop
+                source(srcset="./img/express-img03.webp" type="image/webp")
+                source(srcset="./img/express-img03.png" type="image/png")
+                img(src="" alt="img")
+              picture.mobile-content
+                source(srcset="./img/express-mob2.webp" type="image/webp")
+                source(srcset="./img/express-mob2.png" type="image/png")
+                img(src="" alt="img")
+
+            p
+              | Осуществив звонок в нашу клинику «Феникс» в Самаре и области и заказав приезд врача на дом для вывода из запоя, необходимо договорится о точном времени приезда нашего специалиста. Самое благоприятное время для проведения процедуры по устранению запойного состояния – утро. В это время суток больной испытывает сильную абстиненцию и готов принять любую медицинскую помощь, поэтому легко идет на контакт с нашими сотрудниками.
+
+            p
+              | Первоначально, нарколог проведет диагностирование состояния человека, его самочувствие и настрой на дальнейшее лечение. Главное при первом осмотре для специалиста – выявить возможные противопоказания, в случае имеющихся таковых, вывести из запоя на дому будет невозможно.
+
+            p
+              | Далее, больному вводиться специальный раствор внутривенно, который поможет очистить организм от ядовитых токсинов этила. Такой процесс называется детоксикацией. После установленной капельницы на дому от запоя, пациент приходит в адекватное состояние и не испытывает болевых ощущений от похмелья. Пьющему назначается курс успокоительных препаратов, которые приведут в норму психическое состояние больного. На вывод из запоя в домашних условиях уходит порядком сутки, после чего он оставляет свой контактный номер телефона и уезжает.
+
+
+            .site-text-block__w100-img
+              picture
+                source(srcset="./img/express-img04-horizontal.webp" type="image/webp")
+                source(srcset="./img/express-img04-horizontal.png" type="image/png")
+                img(src="" alt="img")
+
+
+            p
+              | Осуществив звонок в нашу клинику «Феникс» в Самаре и области и заказав приезд врача на дом для вывода из запоя, необходимо договорится о точном времени приезда нашего специалиста. Самое благоприятное время для проведения процедуры по устранению запойного состояния – утро. В это время суток больной испытывает сильную абстиненцию и готов принять любую медицинскую помощь, поэтому легко идет на контакт с нашими сотрудниками.
+
+            p
+              | Первоначально, нарколог проведет диагностирование состояния человека, его самочувствие и настрой на дальнейшее лечение. Главное при первом осмотре для специалиста – выявить возможные противопоказания, в случае имеющихся таковых, вывести из запоя на дому будет невозможно.
+
+            p
+              | Далее, больному вводиться специальный раствор внутривенно, который поможет очистить организм от ядовитых токсинов этила. Такой процесс называется детоксикацией. После установленной капельницы на дому от запоя, пациент приходит в адекватное состояние и не испытывает болевых ощущений от похмелья. Пьющему назначается курс успокоительных препаратов, которые приведут в норму психическое состояние больного. На вывод из запоя в домашних условиях уходит порядком сутки, после чего он оставляет свой контактный номер телефона и уезжает. <br>
+              | Осуществив звонок в нашу клинику «Феникс» в Самаре и области и заказав приезд врача на дом для вывода из запоя, необходимо договорится о точном времени приезда нашего специалиста. Самое благоприятное время для проведения процедуры по устранению запойного состояния – утро. В это время суток больной испытывает сильную абстиненцию и готов принять любую медицинскую помощь, поэтому легко идет на контакт с нашими сотрудниками.
+
+            p
+              | Первоначально, нарколог проведет диагностирование состояния человека, его самочувствие и настрой на дальнейшее лечение. Главное при первом осмотре для специалиста – выявить возможные противопоказания, в случае имеющихся таковых, вывести из запоя на дому будет невозможно.
+
+            p
+              | Далее, больному вводиться специальный раствор внутривенно, который поможет очистить организм от ядовитых токсинов этила. Такой процесс называется детоксикацией. После установленной капельницы на дому от запоя, пациент приходит в адекватное состояние и не испытывает болевых ощущений от похмелья. Пьющему назначается курс успокоительных препаратов, которые приведут в норму психическое состояние больного. На вывод из запоя в домашних условиях уходит порядком сутки, после чего он оставляет свой контактный номер телефона и уезжает. <br>
+              | Осуществив звонок в нашу клинику «Феникс» в Самаре и области и заказав приезд врача на дом для вывода из запоя, необходимо договорится о точном времени приезда нашего специалиста. Самое благоприятное время для проведения процедуры по устранению запойного состояния – утро. В это время суток больной испытывает сильную абстиненцию и готов принять любую медицинскую помощь, поэтому легко идет на контакт с нашими сотрудниками.
+
+            p
+              | Первоначально, нарколог проведет диагностирование состояния человека, его самочувствие и настрой на дальнейшее лечение. Главное при первом осмотре для специалиста – выявить возможные противопоказания, в случае имеющихся таковых, вывести из запоя на дому будет невозможно.
+
+            p
+              | Далее, больному вводиться специальный раствор внутривенно, который поможет очистить организм от ядовитых токсинов этила. Такой процесс называется детоксикацией. После установленной капельницы на дому от запоя, пациент приходит в адекватное состояние и не испытывает болевых ощущений от похмелья. Пьющему назначается курс успокоительных препаратов, которые приведут в норму психическое состояние больного. На вывод из запоя в домашних условиях уходит порядком сутки, после чего он оставляет свой контактный номер телефона и уезжает. <br>
+              | Осуществив звонок в нашу клинику «Феникс» в Самаре и области и заказав приезд врача на дом для вывода из запоя, необходимо договорится о точном времени приезда нашего специалиста. Самое благоприятное время для проведения процедуры по устранению запойного состояния – утро. В это время суток больной испытывает сильную абстиненцию и готов принять любую медицинскую помощь, поэтому легко идет на контакт с нашими сотрудниками.
+
+            p
+              | Первоначально, нарколог проведет диагностирование состояния человека, его самочувствие и настрой на дальнейшее лечение. Главное при первом осмотре для специалиста – выявить возможные противопоказания, в случае имеющихся таковых, вывести из запоя на дому будет невозможно.
+
+            p
+              | Далее, больному вводиться специальный раствор внутривенно, который поможет очистить организм от ядовитых токсинов этила. Такой процесс называется детоксикацией. После установленной капельницы на дому от запоя, пациент приходит в адекватное состояние и не испытывает болевых ощущений от похмелья. Пьющему назначается курс успокоительных препаратов, которые приведут в норму психическое состояние больного. На вывод из запоя в домашних условиях уходит порядком сутки, после чего он оставляет свой контактный номер телефона и уезжает.
+
+    .narco-help
+      .narco-help__inner.site-container
+        h2.narco-help__title.site-h2 Показания к выведению из запоя в домашних условиях
+        .narco-help__signs Признаки запоя:
+        .narco-help__desc
+          .narco-help__left
+            .narco-help__items
+              .narco-help__item
+                .narco-help__item-icon
+                  include ../img/ico/services-ico04.svg
+                .narco-help__item-info
+                  .narco-help__item-name Многодневное употребление алкоголя
+              .narco-help__item
+                .narco-help__item-icon
+                  include ../img/ico/services-ico05.svg
+                .narco-help__item-info
+                  .narco-help__item-name Постоянное увеличение дозы
+              .narco-help__item
+                .narco-help__item-icon
+                  include ../img/ico/services-ico06.svg
+                .narco-help__item-info
+                  .narco-help__item-name Изменения эмоционального фона
+          .narco-help__right
+            .narco-help__img
+              picture
+                source(srcset="./img/services-clinic-img02.webp" type="image/webp")
+                source(srcset="./img/services-clinic-img02.png" type="image/png")
+                img(src="" alt="img")
+            .narco-help__txt
+              p.
+                <strong>Во многих случаях, наши специалисты сталкиваются с тяжелыми случаями, которые требуют срочного вывода из запоя на дому.</strong> Это происходит, когда родственники больного пытаются самостоятельно искоренить проблему и доводят ситуацию до крайностей, либо же тогда, когда человек испытывает сильный абстинентный синдром. Вывод из запоя на дому проводиться круглосуточно, в удобное для пациента время.
+
+
+    .advantage
+      .advantage__inner.site-container
+        h2.advantage__title.site-h2 Показания к выводу из запоя на дому:
+        .advantage__content
+          .advantage__img
+            picture.desctop
+              source(srcset="./img/advantages-img02.webp" type="image/webp")
+              source(srcset="./img/advantages-img02.png" type="image/png")
+              img(src="" alt="img")
+            picture.mobile-content
+              source(srcset="./img/adv-mob.webp" type="image/webp")
+              source(srcset="./img/adv-mob.png" type="image/png")
+              img(src="" alt="img")
+
+          .advantage__txt
+
+            .advantage__check.check-items
+              .check-item Длительность запоя составляет от 3 до 5 дней и больше.
+              .check-item Пьющий не находится в состоянии психоза и агрессии.
+              .check-item Человек самостоятельно и добровольно жаждет помощи специалиста.
+              .check-item Отсутствие противопоказаний и серьезных заболеваний.
+
+            p.
+                Все остальные процедуры по <strong> кодированию от алкогольной зависимости</strong>, а также комплексное лечение проходят в условиях стационара клиники «Феникс» под бдительным контролем специалистов.
+
+    .how-cure
+      .how-cure__inner.site-container
+        h2.how-cure__title.site-h2.site-h2--white Как мы лечим?
+        .how-cure__items
+          .how-cure__item
+            .how-cure__img
+              include ../img/ico/how-do-we-treat-ico01.svg
+            .how-cure__txt Диагностика <br> текущего <br> состояния
+          .how-cure__item
+            .how-cure__img
+              include ../img/ico/how-do-we-treat-ico02.svg
+            .how-cure__txt Назначение <br> индивидуального <br> плана лечения
+          .how-cure__item
+            .how-cure__img
+              include ../img/ico/how-do-we-treat-ico03.svg
+            .how-cure__txt Снятие <br> симптомов
+          .how-cure__item
+            .how-cure__img
+              include ../img/ico/how-do-we-treat-ico04.svg
+            .how-cure__txt Курс <br> лечения
+
+    .about
+      .about__inner.site-container
+        h2.about__title.site-h2 Вывод из запоя в стационаре
+        .about__txt.site-text-block
+          .site-text-block__txt
+            .site-text-block__left-img
+              picture
+                source(srcset="./img/express-img04.webp" type="image/webp")
+                source(srcset="./img/express-img04.png" type="image/png")
+                img(src="" alt="img")
+
+            p
+              | <strong>Наркологический центр «Феникс» предлагает комфортные условия стационара для пребывания в клинике и прохождения всех необходимых процедур.</strong> Вывод из запоя осуществляется анонимно, а данные о клиенте никуда не передаются.
+            p
+              | При первом знакомстве с пациентом, наши врачи проводят тщательный осмотр человека и диагностика его нынешнего состояния, что поможет правильно определиться с эффективными методами искоренения проблемы. Самый распространенный способ – вывод из запоя капельницей. С её помощью больному вводится специальный раствор, который очищает кровь от токсинов и ядов этилового спирта. После проведения детоксикации, больному назначается курс лекарственных общеукрепляющих и  седативных препаратов, которые нормализуют психику алкоголика и восстановят нормальную работу организма. Процедура терапии может занимать от нескольких часов до более длительного времени.
+
+    .narco-help.narco-help--many-icons
+      .narco-help__inner.site-container
+        h2.narco-help__title.site-h2 Показания к выводу из запоя в стационаре
+        .narco-help__desc
+          .narco-help__left
+            .narco-help__items
+              .narco-help__item
+                .narco-help__item-icon
+                  include ../img/ico/services-ico07.svg
+                .narco-help__item-info
+                  .narco-help__item-name Наличие психических расстройств и заболеваний
+              .narco-help__item
+                .narco-help__item-icon
+                  include ../img/ico/services-ico08.svg
+                .narco-help__item-info
+                  .narco-help__item-name Агрессия в период абстиненции
+              .narco-help__item
+                .narco-help__item-icon
+                  include ../img/ico/services-ico09.svg
+                .narco-help__item-info
+                  .narco-help__item-name Нарушения в работе сердца и имеющиеся заболевания в этой области
+              .narco-help__item
+                .narco-help__item-icon
+                  include ../img/ico/services-ico10.svg
+                .narco-help__item-info
+                  .narco-help__item-name Возрастная категория от 60 лет и выше
+              .narco-help__item
+                .narco-help__item-icon
+                  include ../img/ico/services-ico11.svg
+                .narco-help__item-info
+                  .narco-help__item-name Длительность беспрерывного употребления спиртного на протяжении более 5 суток.
+          .narco-help__right
+            .narco-help__img
+              picture
+                source(srcset="./img/services-clinic-img03.webp" type="image/webp")
+                source(srcset="./img/services-clinic-img03.png" type="image/png")
+                img(src="" alt="img")
+            .narco-help__txt
+              p.
+                Вывести из запоя на дому – это очень удобный вариант как для пьющего, так и для его родственников. Но существуют ситуации, когда это сделать невозможно, исходя из ряда причин или проблем со здоровьем. В стационаре пациент всегда находится под контролем специалистов, и в случае ухудшения самочувствия они всегда смогут оказать медицинскую квалифицированную помощь.
+
+              p.
+                <strong>Все остальные противопоказания определяет нарколог, исходя из индивидуальной ситуации каждого.</strong> Вывод из запоя в клинике <strong>«Феникс»</strong> в Самаре и Самарской области – это шанс обрести новое будущее без алкоголя. Не упустите его, звоните к нам прямо сейчас.
